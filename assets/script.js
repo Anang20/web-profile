@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const texts = [
         "Frontend Developer",
         "Mahasiswa Sistem Informasi",
-        "Mahasiswa Unpam",
+        "Mahasiswa UNPAM",
     ];
     
     let currentTextIndex = 0;
@@ -88,23 +88,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     typingInterval = setInterval(typeText, 100);
 
-    // audio
-    const audioPlayer = document.getElementById('audioPlayer');
-
-    // Fungsi untuk memulai audio
-    const playAudio = () => {
-        audioPlayer.play().catch(error => {
-            console.log("Audio tidak dapat diputar secara otomatis:", error);
-        });
-    };
-
-    // Menunggu audio untuk dimuat dan kemudian mengatur waktu
-    audioPlayer.addEventListener('loadedmetadata', () => {
-        // Set waktu yang diinginkan (dalam detik) saat audio pertama kali dimuat
-        const startTime = 185 ; // contoh: mulai pada menit ke-1 (60 detik)
-        audioPlayer.currentTime = startTime;
-
-        // Mencoba memutar audio
-        playAudio();
-    });
 });

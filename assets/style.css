@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #38bdf8;
-    --bg-color: #0f172a;
+    --primary-color: #ec4a85;
+    --bg-color: #310814;
     --text-color: #ffffff;
 }
 
@@ -124,7 +124,7 @@ nav {
 
 @keyframes caret-blink {
     0%, 100% { border-color: transparent; }
-    50% { border-color: black; }
+    50% { border-color: var(--text-color); }
 }
 
 .btn {
